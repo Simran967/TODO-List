@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla TODO List</title>
+    <script src="https://kit.fontawesome.com/ffc9ecaaa4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container task-list-empty">
+        <header>
+            <h1 class="heading">
+                My TODO List
+            </h1>
+            <input type="text" id="total-task" value="0">
+            <span class="total-task-span">tasks left</span>
+            
+            
+        </header>
+        <section class="todo-task">
+            <ul id="task-list">
+            </ul>
+        </section>
+        <footer>
+            <form id="add-task">
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <input type="text" name="add-new-task" id="add-new-task" placeholder="ADD TASK" value="">
+                    <button id="add-task-button" type="button" onclick='addTask()'></button>
+                </div>
+                
+            </form>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
