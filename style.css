@@ -1,0 +1,181 @@
+/* declaring variables */
+:root {
+    --primary-color: rgb(234, 243, 155);
+    --secondary-color: #1E1E1E;
+    --font-family : cursive;
+    --text-color: black;
+    --task-color: white;
+    --footer-color: #6e5f5f;
+    --theme-transition: 0s;
+
+}
+
+/* body style */
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: var(--font-family);
+
+}
+
+/* header style */
+header {
+    display: flex;
+    flex-direction: space-between;
+}
+
+/* heading*/
+.heading {
+    font-weight: 600;
+    font-size: large;
+    color: var(--text-color);
+}
+
+/* style for total left tasks */
+#total-task{
+    width: 10px;
+    height: 10px;
+    margin-top: 22px;
+    border: 0px;
+    margin-left: 80px;
+    font-weight: 300;
+    background-color: var(--primary-color);
+}
+.total-task-span{
+    font-size: medium;
+    margin-top: 15px;
+}
+
+/* container style where whole todo is made */
+.container {
+    position: relative;
+    border: 4px var(--footer-color) solid;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 80vh;
+    border-radius: 20px;
+    overflow: hidden;
+    background: var(--primary-color);
+    transition: var(--theme-transition);
+}
+
+/* style for list (task) */
+.task-list{
+    transition: 0s;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: none;
+
+}
+
+/* style for every item of tasklist */
+.new-task-item {
+    list-style-type: none;
+    border: 1px var(--secondary-color) solid;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    background-color: var(--task-color);
+    color: var(--text-color);
+}
+
+.new-task-item:hover {
+    transition: 0.5s;
+    border: 2px rgba(46, 44, 44, 0.63) dotted;
+    cursor: pointer;
+    background-color:rgba(230, 112, 156, 0.63);
+}
+
+/* task button style */
+.new-task-button {
+    width: 10px;
+    height: 10px;
+    margin-right: 16px;
+    padding: 3px;
+    border: 2px var(--secondary-color) solid;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    border: 2px grey solid;
+    cursor: pointer;
+}
+
+.new-task-data {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 80px;
+    
+}
+
+/* checked box */
+.checked  {
+    text-decoration: line-through;
+    opacity: .5;
+  }
+.newCheckButton{
+    background: #030352ce;
+    color: #fff;
+}
+
+/* style for new task added */
+#add-new-task {
+    min-width: 270px;
+    margin-left: 10px;
+    margin-right: 2px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px rgba(255, 255, 255, 0.267) solid;
+    
+}
+
+#add-new-task::placeholder {
+    color: rgba(255, 255, 255, 0.589);
+    font-size: 20px;
+    font-family: var(--font-family);
+}
+
+/* task buttong style */
+#add-task-button {
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url('/images/add-icon.png');
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    cursor: pointer;
+}
+
+.todo-task {
+    margin: 20px 0px;
+    overflow: hidden;
+    padding-right: 15p;
+}
+
+/* style for footer */
+footer {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 5px;
+    min-width: 100%;
+    background-color: var(--footer-color);
+    left: 0px;
+    border: 10px var(--footer-color) solid;
+}
+
+footer form {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
